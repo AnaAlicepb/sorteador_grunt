@@ -93,7 +93,7 @@ module.exports = function(grunt) { // Define a função que será exportada como
         uglify: {
             target:{
                 files: {
-                    'dis/scripts/main.js':'src/scripts/main.js'
+                    'dist/scripts/main.js':'src/scripts/main.js'
                 }
             }
         }
