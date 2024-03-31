@@ -1,0 +1,50 @@
+// Definindo variáveis para as fontes e cores
+@fontPrincipal: 'Roboto', sans-serif; // Define a fonte principal como Roboto e uma fonte de fallback genérica
+@fontDoTitulo: 'Lobster', cursive; // Define a fonte do título como Lobster e uma fonte de fallback genérica
+@corDoTexto: #fff; // Define a cor do texto como branco
+@corDeFundo: #eb3b5a; // Define a cor de fundo como rosa coral
+@corDoTextoDobotao: #000; // Define a cor do texto do botão como preto
+@corDoFundoDobotao: #f7d731; // Define a cor de fundo do botão como amarelo
+
+// Aplicando as variáveis para estilos
+body {
+    background-color: @corDeFundo; // Usa a variável para definir a cor de fundo
+    font-family: @fontPrincipal; // Usa a variável para definir a fonte principal
+    color: @corDoTexto; // Usa a variável para definir a cor do texto
+}
+
+h1 {
+    font-family: @fontDoTitulo; // Usa a variável para definir a fonte do título
+    font-size: 3em; // Define o tamanho da fonte para o título
+}
+
+main {
+    max-width: 960px; // Define a largura máxima do elemento main
+    width: 100%; // Define a largura como 100%
+    margin: 0 auto; // Centraliza o elemento horizontalmente
+    font-size: 2em; // Define o tamanho da fonte
+    text-align: center; // Alinha o texto ao centro
+}
+
+button {
+    padding: 16px; // Adiciona preenchimento ao botão
+    cursor: pointer; // Define o cursor como ponteiro
+    font-weight: bold; // Define o peso da fonte como negrito
+    font-size: 1.3em; // Define o tamanho da fonte
+    margin-top: 16px; // Define a margem superior
+    border-radius: 8px; // Adiciona borda arredondada
+    background-color: @corDoFundoDobotao; // Usa a variável para definir a cor de fundo do botão
+    color: @corDoTextoDobotao; // Usa a variável para definir a cor do texto do botão
+    font-family: @fontPrincipal; // Usa a variável para definir a fonte do botão
+}
+
+input {
+    display: block; // Define o elemento como um bloco, ocupando toda a largura disponível
+    margin: 16px auto 0; // Define as margens superior e inferior e centraliza horizontalmente com margens automáticas
+    font-size: 2em; // Define o tamanho da fonte como 2em
+    max-width: 120px; // Define a largura máxima do elemento como 120 pixels
+    background-color: transparent; // Define o fundo como transparente
+    text-align: center; // Alinha o texto ao centro
+    color: #fff; // Define a cor do texto como branco
+    border-bottom: 6px solid #fff; // Adiciona uma borda sólida na parte inferior do elemento com 6 pixels de espessura e cor branca
+}
