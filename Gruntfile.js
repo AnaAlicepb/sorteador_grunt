@@ -59,7 +59,11 @@ module.exports = function(grunt) { // Define a função que será exportada como
                         {
                             match: 'ENDERECO_DO_CSS', // Texto a ser substituído
                             replacement: './styles/main.min.css' // Novo texto que substituirá o texto antigo
-                        } 
+                        },
+                        {
+                            match: 'ENDERECO_DO_JS', 
+                            replacement: './scripts/main.min.js' 
+                        }   
                     ]
                 },
                 files: [ // Define os arquivos em que a substituição será realizada
@@ -85,7 +89,14 @@ module.exports = function(grunt) { // Define a função que será exportada como
             }
         },
         
-        clean: ['prebuild'] // Define a tarefa 'clean' para limpar o diretório 'prebuild'
+        clean: ['prebuild'], // Define a tarefa 'clean' para limpar o diretório 'prebuild'
+        uglify: {
+            target:{
+                files: {
+                    'dis/scripts/main.js':'src/scripts/main.js'
+                }
+            }
+        }
     });
 
     // Carrega os plugins necessários para as tarefas definidas anteriormente
@@ -94,10 +105,10 @@ module.exports = function(grunt) { // Define a função que será exportada como
     grunt.loadNpmTasks('grunt-replace'); // Carrega o pacote 'grunt-replace' para substituir texto em arquivos
     grunt.loadNpmTasks('grunt-contrib-htmlmin'); // Carrega o pacote 'grunt-contrib-htmlmin' para minificar arquivos HTML
     grunt.loadNpmTasks('grunt-contrib-clean'); // Carrega o pacote 'grunt-contrib-clean' para limpar diretórios
-    
+    grunt.loadNpmTasks('grunt-contrib-uglify')
     // Define a tarefa 'default' como padrão
     grunt.registerTask('default', ['watch']); // Define a tarefa 'watch' como padrão, observando mudanças nos arquivos Less para o ambiente de desenvolvimento
     
     // Define a tarefa 'build' para compilar arquivos Less e minificar arquivos HTML para produção
-    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'clean']); // Define a tarefa 'build' para compilar arquivos Less e minificar arquivos HTML para o ambiente de produção
+    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'clean','uglify']); // Define a tarefa 'build' para compilar arquivos Less e minificar arquivos HTML para o ambiente de produção
 };
