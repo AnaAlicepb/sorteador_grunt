@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sorteador é uma aplicação web que gera números aleatórios baseados em um limite máximo fornecido pelo usuário.">
-    <meta name="keywords" content="sorteador, randomizador, gerador de números, HTML, CSS, JavaScript">
+    <meta name="keywords" content="sorteador, randomizador, gerador de números, HTML, CSS, JavaScript, Grunt">
     <meta name="author" content="Ana Alice Rodrigues">
+    
     
 </head>
 <body>
 
 <header>
     <h1>Sorteador</h1>
-    <img src="" alt="Imagem representativa do Sorteador" width="300" height="200">
+    <img src="https://l-instagram.sorteador.com.br/img/logo.png" alt="Imagem representativa do Sorteador" width="300" height="200">
 </header>
 
 <details>
@@ -36,6 +37,7 @@
     <h2>Parte Técnica</h2>
     <ul>
         <li>Frontend: HTML, CSS, JavaScript</li>
+        <li>Automatização: Grunt usado para minificar arquivos, compilar SASS e otimizar o carregamento</li>
     </ul>
 </section>
 
@@ -43,8 +45,9 @@
     <h2>Estrutura dos Arquivos</h2>
     <ul>
         <li>index.html - Página principal com funcionalidades embutidas</li>
-        <li>style.css - Folha de estilos CSS para personalização visual (substituir o local indicado por @@ENDERECO_DO_CSS)</li>
-        <li>script.js - Scripts JavaScript para lógica de negócios (substituir o local indicado por @@ENDERECO_DO_JS)</li>
+        <li>style.css - Folha de estilos CSS para personalização visual</li>
+        <li>script.js - Scripts JavaScript para lógica de negócios</li>
+        <li>Gruntfile.js - Configurações do Grunt para automação de tarefas</li>
     </ul>
 </section>
 
@@ -54,9 +57,8 @@
         <li><img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" alt="Badge HTML5"></li>
         <li><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="Badge CSS3"></li>
         <li><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Badge JavaScript"></li>
-        <li><img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Badge Bootstrap"></li>
+        <li><img src="https://img.shields.io/badge/Grunt-FAA918?style=for-the-badge&logo=grunt&logoColor=white" alt="Badge Grunt"></li>
         <li><img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Badge Git"></li>
-        <li><img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="Badge PHP"></li>
     </ul>
 </section>
 
@@ -64,10 +66,10 @@
     <h2>Contato</h2>
     <ul>
         <li><a href="https://linktr.ee/anaeanali5" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li>
-        <li><a href="https://sorteadorgruntana-jvhyljgpp-anaalicepbs-projects.vercel.app" target="_blank"><img src="https://img.shields.io/badge/Hospedado_na_Vercel-563D7C?style=for-the-badge&logo=vercel&logoColor=white" alt="Hospedado na Vercel"> Clique para acessar o projeto</a></li>
+        <li><a href="https://sorteadorgruntana-jvhyljgpp-anaalicepbs-projects.vercel.app" target="_blank">
+            <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"> Clique para acessar o projeto</a></li>
     </ul>
 </section>
-
 
 </body>
 </html>
