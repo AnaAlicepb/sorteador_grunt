@@ -65,10 +65,11 @@
 <section id="contato">
     <h2>Contato</h2>
     <ul>
-        <li><a href="https://linktr.ee/anaeanali5" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li>
+        <li><a href="https://linktr.ee/anaeanali5" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li><br>
         <li><a href="https://sorteadorgruntana.vercel.app/" target="_blank">
-            <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"> Clique para acessar o projeto</a></li>
+            <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"></a></li>
     </ul>
+    <p>Acesse o projeto na vercel</p>
 </section>
 
 </body>
