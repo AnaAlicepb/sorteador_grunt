@@ -6,7 +6,7 @@
     <meta name="description" content="Sorteador é uma aplicação web que gera números aleatórios baseados em um limite máximo fornecido pelo usuário.">
     <meta name="keywords" content="sorteador, randomizador, gerador de números, HTML, CSS, JavaScript">
     <meta name="author" content="Ana Alice Rodrigues">
-    <title>Sorteador</title>
+    
 </head>
 <body>
 
@@ -35,7 +35,6 @@
 <section id="parte-tecnica">
     <h2>Parte Técnica</h2>
     <ul>
-        <li>Backend: Não aplicável (aplicação totalmente no cliente)</li>
         <li>Frontend: HTML, CSS, JavaScript</li>
     </ul>
 </section>
@@ -65,9 +64,10 @@
     <h2>Contato</h2>
     <ul>
         <li><a href="https://linktr.ee/anaeanali5" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li>
-        <li><a href="https://sorteadorgruntana-jvhyljgpp-anaalicepbs-projects.vercel.app" target="_blank">Clique para acessar o projeto</a></li>
+        <li><a href="https://sorteadorgruntana-jvhyljgpp-anaalicepbs-projects.vercel.app" target="_blank"><img src="https://img.shields.io/badge/Hospedado_na_Vercel-563D7C?style=for-the-badge&logo=vercel&logoColor=white" alt="Hospedado na Vercel"> Clique para acessar o projeto</a></li>
     </ul>
 </section>
+
 
 </body>
 </html>
